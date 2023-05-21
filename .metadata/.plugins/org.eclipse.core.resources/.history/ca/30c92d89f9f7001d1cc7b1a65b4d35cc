@@ -1,0 +1,16 @@
+package com.ryangineer.demo.web;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+// CTRL + Shift + o ... to bring in the import
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class HelloController {
+
+	@RequestMapping(value="/", method = RequestMethod.GET)
+	public String sayHello() {
+		return "hello";
+//		System.out.println("hello");
+	}
+}
